@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
     for(var i = 0; i < wordArr.length; i++) {
       if (i == wordArr.length - 1) {
-        finalString += "'" + wordArr[i] + " '"
+        finalString += "'" + wordArr[i].replace(/'/,"\\'") + " '"
       } else {
         finalString += "'" + wordArr[i] + " ',"
       }
