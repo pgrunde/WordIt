@@ -1,0 +1,49 @@
+<section class="container">
+  <h1>WordIt</h1>
+  <p>Add as many phrases as you like!</p>
+  <article>
+    <div class="all-phrases">
+      <div class="phrase-n-count">
+        <p class="count">0.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+      <div class="phrase-n-count">
+        <p class="count">1.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+      <div class="phrase-n-count">
+        <p class="count">2.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+      <div class="phrase-n-count">
+        <p class="count">3.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+      <div class="phrase-n-count">
+        <p class="count">4.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+      <div class="phrase-n-count">
+        <p class="count">5.</p>
+        <%= text_field(:search, :word, class: "phrase") %>
+      </div>
+    </div>
+
+  <div class="clearfix">
+    <div class="add">
+      <h1>+</h1>
+    </div>
+    <div class="remove">
+      <h1>-</h1>
+    </div>
+  </div>
+    <div class="create">
+      <h1>Create Bookmark!</h1>
+    </div>
+  </article>
+</section>
+<section class="bookmark">
+  <a href="">
+    <%= image_tag "WordIt.png" %>
+  </a>
+</section>

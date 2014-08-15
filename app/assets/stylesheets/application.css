@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; }
+
+/* * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+.clearfix { *zoom: 1; }
+
+a {
+    text-decoration:none;
+}
+
+h1, p{
+    text-align: center;
+    font-family:monaco, sans-serif;
+    color:white;
+}
+
+article {
+    width:30%;
+    margin:0 auto;
+}
+
+img {
+    border-radius:1em;
+}
+
+input {
+    width:11em;
+    height:2em;
+}
+.container {
+    width:30em;
+    margin:0 auto;
+    margin-top:20px;
+    padding:1em;
+    background-color: #085943;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-top:3px solid #53b030;
+    border-left:3px solid #53b030;
+    border-right:3px solid #53b030;
+}
+
+.count {
+    margin:0;
+    display:inline;
+}
+
+.phrase {
+    display:block;
+    margin:0 auto;
+    margin-bottom:1em;
+}
+
+.add {
+    margin:0 auto;
+    width:4em;
+    height:4em;
+    border:2px solid green;
+    text-align: center;
+    background-color: greenyellow;
+    position:relative;
+    float:left;
+    border-radius:2em;
+    margin-right:1px;
+}
+
+.remove {
+    margin:0 auto;
+    margin-left:1px;
+    width:4em;
+    height:4em;
+    border:2px solid red;
+    text-align: center;
+    background-color: pink;
+    position:relative;
+    float:left;
+    border-radius:2em;
+}
+
+.add h1 {
+    margin-top:-47px;
+    font-size:100px;
+}
+
+.remove h1 {
+    margin-top:-43px;
+    font-size:100px;
+}
+
+.create {
+    display:inline;
+    margin:0 auto;
+}
+
+.create h1 {
+    border-radius:1.2em;
+    color: #000167;
+    border:1px dashed black;
+    background-color: #9dcdaf;
+}
+
+.bookmark {
+    display:none;
+    border-bottom:3px solid #0b0db4;
+    border-right:3px solid #0b0db4;
+    border-left:3px solid #0b0db4;
+    background-color: #070872;
+    width:30em;
+    margin:0 auto;
+    padding:1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.bookmark a {
+    margin-left:20px;
+}
